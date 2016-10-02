@@ -1,0 +1,12 @@
+{
+  "components": {
+    "seeds": {
+      "Task_schedule": {
+        "src": "src/seeds/Task_schedule"
+      }
+    }
+  },
+  "dependencies": {
+    "seeds": {}
+  }
+}
