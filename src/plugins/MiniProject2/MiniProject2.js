@@ -80,7 +80,7 @@ define([
                 var res = self.printRecursively(self.rootNode, nodes);
                 var metaNodeInfoJson = JSON.stringify(self.metaNodeInfo, null, 4);
                 var treeNodeInfoJson = JSON.stringify(res, null, 4);
-                artifact = self.blobClient.createArtifact('data');
+                artifact = self.blobClient.createArtifact('project-data');
                 self.logger.info('nodes number ', Object.keys(nodes).length);
                 self.logger.info('res', res);
                 return artifact.addFilesAsSoftLinks({
@@ -209,14 +209,17 @@ define([
 
         for (i = 0; i < childrenPaths.length; i += 1) {
             childNode = nodes[childrenPaths[i]];
-            if (self.core.getAttribute(childNode, 'name')!=='FCO') {
-                baseNode = self.core.getBaseType(childNode);
+            // check if the base node exists
+            baseNode = self.core.getBaseType(childNode);
+            if (baseNode) {
                 baseNodeName = self.core.getAttribute(baseNode, 'name');
             }
             var grandChildrenPaths = self.core.getChildrenPaths(childNode);
-            // self.logger.info(indent, self.core.getAttribute(root, 'name'), self.core.getPath(root), childrenPaths.length, baseNodeName);
             self.metaNodeInfo.push({name: self.core.getAttribute(childNode, 'name'), path: self.core.getPath(childNode), nbrOfChildren: grandChildrenPaths.length, base: baseNodeName});
-            self.printChildrenRec(childNode, nodes, indent + '  ');
+            // add children only if they are meta nodes
+            if (self.getMetaType(childNode) === childNode) {
+                self.printChildrenRec(childNode, nodes, indent + '  ');
+            }
         }
 
     };
