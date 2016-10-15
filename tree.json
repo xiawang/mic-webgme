@@ -1,0 +1,470 @@
+{
+    "name": "ROOT",
+    "children": {
+        "/1": {
+            "name": "FCO",
+            "isMeta": true,
+            "metaType": "FCO",
+            "children": {}
+        },
+        "/j": {
+            "name": "Example",
+            "isMeta": false,
+            "metaType": "Folder",
+            "children": {
+                "/j/h": {
+                    "name": "Single_Core_Computer_Task_Scheduling",
+                    "isMeta": false,
+                    "metaType": "Task_scheduling",
+                    "children": {
+                        "/j/h/0": {
+                            "name": "release_resources",
+                            "isMeta": false,
+                            "metaType": "release_resources",
+                            "src": "CPU",
+                            "dst": "Memory_available_system-wide",
+                            "children": {}
+                        },
+                        "/j/h/2": {
+                            "name": "Task_completed",
+                            "isMeta": false,
+                            "metaType": "Task_completed",
+                            "children": {
+                                "/j/h/2/K": {
+                                    "name": "out_task_01",
+                                    "isMeta": false,
+                                    "metaType": "out_task",
+                                    "children": {
+                                        "/j/h/2/K/J": {
+                                            "name": "Task_object",
+                                            "isMeta": false,
+                                            "metaType": "Task_object",
+                                            "children": {}
+                                        },
+                                        "/j/h/2/K/H": {
+                                            "name": "Memory_needed",
+                                            "isMeta": false,
+                                            "metaType": "Resources_needed",
+                                            "children": {}
+                                        }
+                                    }
+                                },
+                                "/j/h/2/l": {
+                                    "name": "out_task_02",
+                                    "isMeta": false,
+                                    "metaType": "out_task",
+                                    "children": {
+                                        "/j/h/2/l/1": {
+                                            "name": "Memory_needed",
+                                            "isMeta": false,
+                                            "metaType": "Resources_needed",
+                                            "children": {}
+                                        },
+                                        "/j/h/2/l/k": {
+                                            "name": "Task_object",
+                                            "isMeta": false,
+                                            "metaType": "Task_object",
+                                            "children": {}
+                                        }
+                                    }
+                                },
+                                "/j/h/2/R": {
+                                    "name": "output_order",
+                                    "isMeta": false,
+                                    "metaType": "output_order",
+                                    "src": "out_task_01",
+                                    "dst": "out_task_02",
+                                    "children": {}
+                                }
+                            }
+                        },
+                        "/j/h/3": {
+                            "name": "Query",
+                            "isMeta": false,
+                            "metaType": "Query",
+                            "src": "CPU",
+                            "dst": "Memory_available_system-wide",
+                            "children": {}
+                        },
+                        "/j/h/8": {
+                            "name": "Memory_available_system-wide",
+                            "isMeta": false,
+                            "metaType": "Resources_available_system-wide",
+                            "children": {
+                                "/j/h/8/0": {
+                                    "name": "Memory_location_01",
+                                    "isMeta": false,
+                                    "metaType": "Resource_location",
+                                    "children": {}
+                                },
+                                "/j/h/8/2": {
+                                    "name": "03",
+                                    "isMeta": false,
+                                    "metaType": "unit_locaton_link",
+                                    "src": "Memory_piece_03",
+                                    "dst": "Memory_location_03",
+                                    "children": {}
+                                },
+                                "/j/h/8/7": {
+                                    "name": "resource_unit_order",
+                                    "isMeta": false,
+                                    "metaType": "resource_unit_order",
+                                    "src": "Memory_piece_02",
+                                    "dst": "Memory_piece_03",
+                                    "children": {}
+                                },
+                                "/j/h/8/U": {
+                                    "name": "01",
+                                    "isMeta": false,
+                                    "metaType": "unit_locaton_link",
+                                    "src": "Memory_piece_01",
+                                    "dst": "Memory_location_01",
+                                    "children": {}
+                                },
+                                "/j/h/8/s": {
+                                    "name": "Memory_location_02",
+                                    "isMeta": false,
+                                    "metaType": "Resource_location",
+                                    "children": {}
+                                },
+                                "/j/h/8/S": {
+                                    "name": "02",
+                                    "isMeta": false,
+                                    "metaType": "unit_locaton_link",
+                                    "src": "Memory_piece_02",
+                                    "dst": "Memory_location_02",
+                                    "children": {}
+                                },
+                                "/j/h/8/x": {
+                                    "name": "Memory_piece_01",
+                                    "isMeta": false,
+                                    "metaType": "Resource_unit",
+                                    "children": {}
+                                },
+                                "/j/h/8/X": {
+                                    "name": "Memory_piece_02",
+                                    "isMeta": false,
+                                    "metaType": "Resource_unit",
+                                    "children": {}
+                                },
+                                "/j/h/8/q": {
+                                    "name": "Memory_piece_03",
+                                    "isMeta": false,
+                                    "metaType": "Resource_unit",
+                                    "children": {}
+                                },
+                                "/j/h/8/o": {
+                                    "name": "resource_unit_order",
+                                    "isMeta": false,
+                                    "metaType": "resource_unit_order",
+                                    "src": "Memory_piece_01",
+                                    "dst": "Memory_piece_02",
+                                    "children": {}
+                                },
+                                "/j/h/8/D": {
+                                    "name": "Memory_location_03",
+                                    "isMeta": false,
+                                    "metaType": "Resource_location",
+                                    "children": {}
+                                }
+                            }
+                        },
+                        "/j/h/e": {
+                            "name": "input",
+                            "isMeta": false,
+                            "metaType": "input",
+                            "src": "Task_to_be_done",
+                            "dst": "CPU",
+                            "children": {}
+                        },
+                        "/j/h/Q": {
+                            "name": "Answer",
+                            "isMeta": false,
+                            "metaType": "Answer",
+                            "src": "Memory_available_system-wide",
+                            "dst": "CPU",
+                            "children": {}
+                        },
+                        "/j/h/B": {
+                            "name": "output",
+                            "isMeta": false,
+                            "metaType": "output",
+                            "src": "CPU",
+                            "dst": "Task_completed",
+                            "children": {}
+                        },
+                        "/j/h/t": {
+                            "name": "Task_to_be_done",
+                            "isMeta": false,
+                            "metaType": "Task_to_be_done",
+                            "children": {
+                                "/j/h/t/5": {
+                                    "name": "in_task_01",
+                                    "isMeta": false,
+                                    "metaType": "in_task",
+                                    "children": {
+                                        "/j/h/t/5/H": {
+                                            "name": "Task_object",
+                                            "isMeta": false,
+                                            "metaType": "Task_object",
+                                            "children": {}
+                                        },
+                                        "/j/h/t/5/K": {
+                                            "name": "Memory_needed",
+                                            "isMeta": false,
+                                            "metaType": "Resources_needed",
+                                            "children": {}
+                                        }
+                                    }
+                                },
+                                "/j/h/t/9": {
+                                    "name": "input_order",
+                                    "isMeta": false,
+                                    "metaType": "input_order",
+                                    "src": "in_task_01",
+                                    "dst": "in_task_02",
+                                    "children": {}
+                                },
+                                "/j/h/t/Y": {
+                                    "name": "in_task_02",
+                                    "isMeta": false,
+                                    "metaType": "in_task",
+                                    "children": {
+                                        "/j/h/t/Y/m": {
+                                            "name": "Task_object",
+                                            "isMeta": false,
+                                            "metaType": "Task_object",
+                                            "children": {}
+                                        },
+                                        "/j/h/t/Y/H": {
+                                            "name": "Memory_needed",
+                                            "isMeta": false,
+                                            "metaType": "Resources_needed",
+                                            "children": {}
+                                        }
+                                    }
+                                },
+                                "/j/h/t/X": {
+                                    "name": "in_task_03",
+                                    "isMeta": false,
+                                    "metaType": "in_task",
+                                    "children": {
+                                        "/j/h/t/X/3": {
+                                            "name": "Task_object",
+                                            "isMeta": false,
+                                            "metaType": "Task_object",
+                                            "children": {}
+                                        },
+                                        "/j/h/t/X/v": {
+                                            "name": "Memory_needed",
+                                            "isMeta": false,
+                                            "metaType": "Resources_needed",
+                                            "children": {}
+                                        }
+                                    }
+                                },
+                                "/j/h/t/T": {
+                                    "name": "input_order",
+                                    "isMeta": false,
+                                    "metaType": "input_order",
+                                    "src": "in_task_02",
+                                    "dst": "in_task_03",
+                                    "children": {}
+                                }
+                            }
+                        },
+                        "/j/h/H": {
+                            "name": "CPU",
+                            "isMeta": false,
+                            "metaType": "Executor",
+                            "children": {
+                                "/j/h/H/v": {
+                                    "name": "current_task",
+                                    "isMeta": false,
+                                    "metaType": "current_task",
+                                    "children": {
+                                        "/j/h/H/v/3": {
+                                            "name": "Memory_needed",
+                                            "isMeta": false,
+                                            "metaType": "Resources_needed",
+                                            "children": {}
+                                        },
+                                        "/j/h/H/v/N": {
+                                            "name": "Task_object",
+                                            "isMeta": false,
+                                            "metaType": "Task_object",
+                                            "children": {}
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "/U": {
+            "name": "Language",
+            "isMeta": true,
+            "metaType": "Language",
+            "children": {
+                "/U/1": {
+                    "name": "Folder",
+                    "isMeta": true,
+                    "metaType": "Folder",
+                    "children": {}
+                },
+                "/U/4": {
+                    "name": "input_order",
+                    "isMeta": true,
+                    "metaType": "input_order",
+                    "children": {}
+                },
+                "/U/5": {
+                    "name": "Resource_location",
+                    "isMeta": true,
+                    "metaType": "Resource_location",
+                    "children": {}
+                },
+                "/U/9": {
+                    "name": "current_task",
+                    "isMeta": true,
+                    "metaType": "current_task",
+                    "children": {}
+                },
+                "/U/l": {
+                    "name": "Query",
+                    "isMeta": true,
+                    "metaType": "Query",
+                    "children": {}
+                },
+                "/U/C": {
+                    "name": "Resource_unit",
+                    "isMeta": true,
+                    "metaType": "Resource_unit",
+                    "children": {}
+                },
+                "/U/h": {
+                    "name": "resource_unit_order",
+                    "isMeta": true,
+                    "metaType": "resource_unit_order",
+                    "children": {}
+                },
+                "/U/V": {
+                    "name": "unit_locaton_link",
+                    "isMeta": true,
+                    "metaType": "unit_locaton_link",
+                    "children": {}
+                },
+                "/U/u": {
+                    "name": "Task_scheduling",
+                    "isMeta": true,
+                    "metaType": "Task_scheduling",
+                    "children": {}
+                },
+                "/U/X": {
+                    "name": "release_resources",
+                    "isMeta": true,
+                    "metaType": "release_resources",
+                    "children": {}
+                },
+                "/U/B": {
+                    "name": "Executor",
+                    "isMeta": true,
+                    "metaType": "Executor",
+                    "children": {}
+                },
+                "/U/e": {
+                    "name": "Resources",
+                    "isMeta": true,
+                    "metaType": "Resources",
+                    "children": {}
+                },
+                "/U/F": {
+                    "name": "Resources_available_system-wide",
+                    "isMeta": true,
+                    "metaType": "Resources_available_system-wide",
+                    "children": {}
+                },
+                "/U/z": {
+                    "name": "Resources_needed",
+                    "isMeta": true,
+                    "metaType": "Resources_needed",
+                    "children": {}
+                },
+                "/U/t": {
+                    "name": "Priority",
+                    "isMeta": true,
+                    "metaType": "Priority",
+                    "children": {}
+                },
+                "/U/r": {
+                    "name": "Task",
+                    "isMeta": true,
+                    "metaType": "Task",
+                    "children": {}
+                },
+                "/U/S": {
+                    "name": "in_task",
+                    "isMeta": true,
+                    "metaType": "in_task",
+                    "children": {}
+                },
+                "/U/G": {
+                    "name": "out_task",
+                    "isMeta": true,
+                    "metaType": "out_task",
+                    "children": {}
+                },
+                "/U/I": {
+                    "name": "Task_list",
+                    "isMeta": true,
+                    "metaType": "Task_list",
+                    "children": {}
+                },
+                "/U/y": {
+                    "name": "Task_object",
+                    "isMeta": true,
+                    "metaType": "Task_object",
+                    "children": {}
+                },
+                "/U/d": {
+                    "name": "Task_completed",
+                    "isMeta": true,
+                    "metaType": "Task_completed",
+                    "children": {}
+                },
+                "/U/O": {
+                    "name": "Task_to_be_done",
+                    "isMeta": true,
+                    "metaType": "Task_to_be_done",
+                    "children": {}
+                },
+                "/U/i": {
+                    "name": "input",
+                    "isMeta": true,
+                    "metaType": "input",
+                    "children": {}
+                },
+                "/U/D": {
+                    "name": "output",
+                    "isMeta": true,
+                    "metaType": "output",
+                    "children": {}
+                },
+                "/U/c": {
+                    "name": "output_order",
+                    "isMeta": true,
+                    "metaType": "output_order",
+                    "children": {}
+                },
+                "/U/T": {
+                    "name": "Answer",
+                    "isMeta": true,
+                    "metaType": "Answer",
+                    "children": {}
+                }
+            }
+        }
+    }
+}
