@@ -205,17 +205,18 @@ define([
 
         childrenPaths = self.core.getChildrenPaths(root);
         var baseNode = null;
-        var baseNodeName = null;
+        var baseNodeName = 'null';
 
         for (i = 0; i < childrenPaths.length; i += 1) {
             childNode = nodes[childrenPaths[i]];
             // check if the base node exists
-            baseNode = self.core.getBaseType(childNode);
+            baseNode = self.core.getBase(childNode);
             if (baseNode) {
                 baseNodeName = self.core.getAttribute(baseNode, 'name');
             }
             var grandChildrenPaths = self.core.getChildrenPaths(childNode);
             self.metaNodeInfo.push({name: self.core.getAttribute(childNode, 'name'), path: self.core.getPath(childNode), nbrOfChildren: grandChildrenPaths.length, base: baseNodeName});
+            self.logger.info(indent, 'name', self.core.getAttribute(childNode, 'name'), '  ', baseNodeName);
             // add children only if they are meta nodes
             if (self.getMetaType(childNode) === childNode) {
                 self.printChildrenRec(childNode, nodes, indent + '  ');

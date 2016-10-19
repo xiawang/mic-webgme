@@ -3,7 +3,7 @@
         "name": "FCO",
         "path": "/1",
         "nbrOfChildren": 0,
-        "base": "FCO"
+        "base": "null"
     },
     {
         "name": "Example",
@@ -15,162 +15,162 @@
         "name": "Language",
         "path": "/U",
         "nbrOfChildren": 26,
-        "base": "Language"
+        "base": "FCO"
     },
     {
         "name": "Folder",
         "path": "/U/1",
         "nbrOfChildren": 0,
-        "base": "Folder"
+        "base": "FCO"
     },
     {
         "name": "input_order",
         "path": "/U/4",
         "nbrOfChildren": 0,
-        "base": "input_order"
+        "base": "Priority"
     },
     {
         "name": "Resource_location",
         "path": "/U/5",
         "nbrOfChildren": 0,
-        "base": "Resource_location"
+        "base": "FCO"
     },
     {
         "name": "current_task",
         "path": "/U/9",
         "nbrOfChildren": 0,
-        "base": "current_task"
+        "base": "Task"
     },
     {
         "name": "Query",
         "path": "/U/l",
         "nbrOfChildren": 0,
-        "base": "Query"
+        "base": "FCO"
     },
     {
         "name": "Resource_unit",
         "path": "/U/C",
         "nbrOfChildren": 0,
-        "base": "Resource_unit"
+        "base": "FCO"
     },
     {
         "name": "resource_unit_order",
         "path": "/U/h",
         "nbrOfChildren": 0,
-        "base": "resource_unit_order"
+        "base": "FCO"
     },
     {
         "name": "unit_locaton_link",
         "path": "/U/V",
         "nbrOfChildren": 0,
-        "base": "unit_locaton_link"
+        "base": "FCO"
     },
     {
         "name": "Task_scheduling",
         "path": "/U/u",
         "nbrOfChildren": 0,
-        "base": "Task_scheduling"
+        "base": "FCO"
     },
     {
         "name": "release_resources",
         "path": "/U/X",
         "nbrOfChildren": 0,
-        "base": "release_resources"
+        "base": "FCO"
     },
     {
         "name": "Executor",
         "path": "/U/B",
         "nbrOfChildren": 0,
-        "base": "Executor"
+        "base": "FCO"
     },
     {
         "name": "Resources",
         "path": "/U/e",
         "nbrOfChildren": 0,
-        "base": "Resources"
+        "base": "FCO"
     },
     {
         "name": "Resources_available_system-wide",
         "path": "/U/F",
         "nbrOfChildren": 0,
-        "base": "Resources_available_system-wide"
+        "base": "Resources"
     },
     {
         "name": "Resources_needed",
         "path": "/U/z",
         "nbrOfChildren": 0,
-        "base": "Resources_needed"
+        "base": "Resources"
     },
     {
         "name": "Priority",
         "path": "/U/t",
         "nbrOfChildren": 0,
-        "base": "Priority"
+        "base": "FCO"
     },
     {
         "name": "Task",
         "path": "/U/r",
         "nbrOfChildren": 0,
-        "base": "Task"
+        "base": "FCO"
     },
     {
         "name": "in_task",
         "path": "/U/S",
         "nbrOfChildren": 0,
-        "base": "in_task"
+        "base": "Task"
     },
     {
         "name": "out_task",
         "path": "/U/G",
         "nbrOfChildren": 0,
-        "base": "out_task"
+        "base": "Task"
     },
     {
         "name": "Task_list",
         "path": "/U/I",
         "nbrOfChildren": 0,
-        "base": "Task_list"
+        "base": "FCO"
     },
     {
         "name": "Task_object",
         "path": "/U/y",
         "nbrOfChildren": 0,
-        "base": "Task_object"
+        "base": "FCO"
     },
     {
         "name": "Task_completed",
         "path": "/U/d",
         "nbrOfChildren": 0,
-        "base": "Task_completed"
+        "base": "Task_list"
     },
     {
         "name": "Task_to_be_done",
         "path": "/U/O",
         "nbrOfChildren": 0,
-        "base": "Task_to_be_done"
+        "base": "Task_list"
     },
     {
         "name": "input",
         "path": "/U/i",
         "nbrOfChildren": 0,
-        "base": "input"
+        "base": "FCO"
     },
     {
         "name": "output",
         "path": "/U/D",
         "nbrOfChildren": 0,
-        "base": "output"
+        "base": "FCO"
     },
     {
         "name": "output_order",
         "path": "/U/c",
         "nbrOfChildren": 0,
-        "base": "output_order"
+        "base": "Priority"
     },
     {
         "name": "Answer",
         "path": "/U/T",
         "nbrOfChildren": 0,
-        "base": "Answer"
+        "base": "FCO"
     }
 ]
